@@ -1,0 +1,13 @@
+# tests/test_greet.py
+import pytest
+from src.saludo import saludo
+
+def test_saludo_with_valid_name():
+    # Prueba que la función retorne el saludo correcto
+    result = greet("Alice")
+    assert result == "Hello, Alice!"
+
+def test_saludo_with_empty_string():
+    # Prueba el comportamiento con una cadena vacía
+    result = greet("")
+    assert result == "Hello, !"
